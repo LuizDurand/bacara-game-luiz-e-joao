@@ -42,10 +42,7 @@ while fichas_jogador > 0:
             fichas_jogador = fichas_jogador - valor
             print('Puts, que peninha você perdeu {0} fichas!!'.format(valor))
 
+    print ('Jogador tem {0} fichas'.format(fichas_jogador))
 
-
-
-
-
-
-    
+print('')
+print('FIM DE JOGO')   
