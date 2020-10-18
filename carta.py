@@ -5,6 +5,7 @@ naipe = 4
 cartas_por_naipe = 13
 cartas_por_baralho = naipe * cartas_por_naipe
 
+# Essa função verifica se não houve repetição de carta 
 def verifica_carta(carta_verificar,lista_cartas):
     carta_unica=True
 
