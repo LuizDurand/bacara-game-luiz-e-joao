@@ -38,17 +38,30 @@ def cartas_aleatorias (numeros_grupos):
     lista_c = []
 
     for i in range (0, numeros_grupos):
-        lista_p = []
+        cartas_jogador = []
 
         for j in range (0, 2):
             while True:
                 carta_nova= carta_aleatoria()
                 if verifica_carta(carta_nova,lista_c):
-                    lista_p.append(carta_nova)
+                    cartas_jogador.append(carta_nova)
                     break
-        lista_c.append(lista_p)
+        lista_c.append(cartas_jogador)
     return lista_c
-print(cartas_aleatorias(2))
+
+
+def soma_cartas (cartas_jogador):
+    soma = 0 
+    
+    for carta in cartas_jogador:
+        valor = carta[1]
+        soma += carta
+    return soma 
+        
+
+
+    
+
 
 
 
