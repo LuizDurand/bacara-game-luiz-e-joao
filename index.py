@@ -21,23 +21,23 @@ while fichas_jogador > 0:
     if aposta == 'empate':
         if soma_jogador == soma_banco:
             fichas_jogador = fichas_jogador + 8 * valor
-            print('Parabéns, você ganhou {0} fichas!!'.format(8 * valor))
+            print('Parabéns, você ganhou {0} fichas!!'.format( 8 * valor))
         else:
             fichas_jogador = fichas_jogador - valor
             print('Puts, que peninha você perdeu {0} fichas!!'.format(valor))
 
     if aposta == 'jogador':
-        if soma_jogador >= soma_banco:
-            fichas_jogador = fichas_jogador + 8 * valor
-            print('Parabéns, você ganhou {0} fichas!!'.format(8 * valor))
+        if soma_jogador > soma_banco:
+            fichas_jogador = fichas_jogador +  valor
+            print('Parabéns, você ganhou {0} fichas!!'.format( valor))
         else:
             fichas_jogador = fichas_jogador - valor
             print('Puts, que peninha você perdeu {0} fichas!!'.format(valor))
 
-    if aposta == 'empate':
-        if soma_jogador == soma_banco:
-            fichas_jogador = fichas_jogador + 8 * valor
-            print('Parabéns, você ganhou {0} fichas!!'.format(8 * valor))
+    if aposta == 'banco':
+        if soma_jogador < soma_banco:
+            fichas_jogador = fichas_jogador + int(0.95* valor)
+            print('Parabéns, você ganhou {0:.0f} fichas!!'.format(0.95* valor))
         else:
             fichas_jogador = fichas_jogador - valor
             print('Puts, que peninha você perdeu {0} fichas!!'.format(valor))
