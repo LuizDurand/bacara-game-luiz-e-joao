@@ -10,7 +10,7 @@ while fichas_jogador > 0:
 
     aposta = input('Faça sua aposta, jogador, banco ou empate??')
 
-    cartas_jogador, cartas_banco = cartas_aleatorias()
+    cartas_jogador, cartas_banco = cartas_aleatorias(2)
 
     soma_jogador = soma_cartas(cartas_jogador)
     soma_banco = soma_cartas(cartas_banco)

@@ -30,7 +30,7 @@ def carta_aleatoria (lista_cartas):
             
         carta=(ndc, numero)
 
-        if verifica_carta(carta_nova,lista_c):
+        if verifica_carta(carta,lista_cartas):
             return carta
 
 
@@ -39,7 +39,7 @@ def soma_cartas (cartas_jogador):
     
     for carta in cartas_jogador:
         valor = carta[1]
-        soma += carta
+        soma += valor
     
     while soma>=10:
         soma=soma-10
@@ -49,7 +49,7 @@ def soma_cartas (cartas_jogador):
 
 
 def cartas_aleatorias (numeros_grupos):
-    lista_c = []
+    lista_cartas = []
 
     for i in range (0, numeros_grupos):
         cartas_jogador = []
@@ -61,9 +61,9 @@ def cartas_aleatorias (numeros_grupos):
         if soma<6:
             cartas_jogador.append(carta_aleatoria(lista_cartas))
         
-        lista_c.append(cartas_jogador)
+        lista_cartas.append(cartas_jogador)
 
-    return lista_c
+    return lista_cartas
 
 
     
