@@ -17,6 +17,18 @@ def carta_aleatoria ():
     
     return (ndc, numero)
 
+def verifica_carta(carta_verificar,lista_cartas):
+    carta_unica=True
+
+    for cartas_jogador in lista_cartas:
+        for carta_jogador in cartas_jogador:
+            if carta_verificar==carta_jogador:
+                carta_unica=False
+    return carta_unica
+
+
+
+
 def cartas_aleatorias (numeros_grupos):
     lista_c = []
 
@@ -24,7 +36,14 @@ def cartas_aleatorias (numeros_grupos):
         lista_p = []
 
         for j in range (0, 2):
-            while True: 
+            while True:
+                carta_nova= carta_aleatoria()
+                if verifica_carta(carta_nova,lista_c):
+                    lista_p.append(carta_nova)
+                    break
+        lista_c.append(lista_p)
+    return lista_c
+print(cartas_aleatorias(2))
 
 
 
