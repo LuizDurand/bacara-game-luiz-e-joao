@@ -10,12 +10,17 @@ def carta_aleatoria ():
 
     baralho = int(ndc / cartas_por_baralho)
     naipe = int((ndc - cartas_por_baralho) / cartas_por_naipe)
-    numero = ndc - cartas_por_baralho
+    numero = ndc 
 
-    while numero > 13:
+    while numero > cartas_por_naipe:
         numero -= cartas_por_naipe
+
+    if numero >= 11:
+        numero = 0
+        
     
     return (ndc, numero)
+
 
 def verifica_carta(carta_verificar,lista_cartas):
     carta_unica=True
