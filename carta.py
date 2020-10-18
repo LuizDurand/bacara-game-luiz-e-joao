@@ -1,3 +1,9 @@
+# EP - Design de Software
+# Equipe: Joao Manoel Pasqua Filho e Luiz Felipe Borelli Durand
+# Data: 18/10/2020
+
+
+
 from random import randint
 import math
 
