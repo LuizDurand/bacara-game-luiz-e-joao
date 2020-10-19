@@ -49,3 +49,5 @@ while fichas_jogador > 0:
 
 print('')
 print('FIM DE JOGO')   
+#Aparece essa mensagem quando o numero de fichas e 0
+#Jogo FINALIZADO!
