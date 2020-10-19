@@ -7,6 +7,7 @@
 from random import randint
 import math
 
+# Sao 52 cartas por baralho, sendo 13 de cada naipe
 naipe = 4
 cartas_por_naipe = 13
 cartas_por_baralho = naipe * cartas_por_naipe
@@ -21,6 +22,7 @@ def verifica_carta(carta_verificar,lista_cartas):
                 carta_unica=False
     return carta_unica
 
+# Distribuidor de carta
 def carta_aleatoria (lista_cartas):
     while True:
         ndc = randint(1, cartas_por_baralho)
