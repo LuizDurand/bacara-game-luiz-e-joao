@@ -42,7 +42,7 @@ def carta_aleatoria (lista_cartas):
         if verifica_carta(carta,lista_cartas):
             return carta
 
-
+# Responsavel por realizar a soma das cartas
 def soma_cartas (cartas_jogador):
     soma = 0 
     
@@ -56,7 +56,7 @@ def soma_cartas (cartas_jogador):
 
     return soma 
 
-
+# Verifica se a soma foi maior que 6
 def cartas_aleatorias (numeros_grupos):
     lista_cartas = []
 
@@ -74,7 +74,7 @@ def cartas_aleatorias (numeros_grupos):
 
     return lista_cartas
 
-
+# Se a soma foi menor que 6, adiciona uma nova carta para o jogador.Caso o contrario nada acontece.
     
 
 
