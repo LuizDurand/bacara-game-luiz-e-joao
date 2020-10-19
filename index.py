@@ -1,13 +1,16 @@
 from carta import *
 
+#Cada jogador começa com 1000 fichas
 fichas_jogador = 1000
 
+#Enquanto o numero de fichas for maior que 0 o jogador continua jogando
 while fichas_jogador > 0:
     valor = int(input('Quanto você quer perder hoje??'))
     
     if valor == 0:
         break 
 
+#O jogador escolhe o quanto ele quer apostar
     aposta = input('Faça sua aposta, jogador, banco ou empate??')
 
     cartas_jogador, cartas_banco = cartas_aleatorias(2)
